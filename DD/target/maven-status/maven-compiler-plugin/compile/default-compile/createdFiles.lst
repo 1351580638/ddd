@@ -1,0 +1,16 @@
+com\baizhi\entity\Category.class
+com\baizhi\dao\ProductDao.class
+com\baizhi\service\ProductService.class
+com\baizhi\service\UserService.class
+com\baizhi\controller\ProductController.class
+com\baizhi\dao\UserDao.class
+com\baizhi\dao\CategoryDao.class
+com\baizhi\entity\Product.class
+com\baizhi\entity\Menu.class
+com\baizhi\entity\User.class
+com\baizhi\controller\UserController.class
+com\baizhi\App.class
+com\baizhi\service\impl\UserServiceImpl.class
+com\baizhi\service\impl\CategoryServiceImpl.class
+com\baizhi\service\impl\ProductServiceImpl.class
+com\baizhi\service\CategoryService.class

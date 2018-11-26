@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace等于全限定名 -->
+<mapper namespace="com.baizhi.dao.ProductDao">
+   <!-- <resultMap type="Product" id="ProductMap">
+        <id column="book_id" property="book_id"/>
+        <result column="cid" property="cid"/>
+        <result column="book_name" property="book_name"/>
+        <result column="book_price" property="book_price"/>
+        <result column="groundingDate" property="groundingDate"/>
+        <result column="book_state" property="book_state"/>
+        <result column="inventory" property="inventory"/>
+        <result column="author" property="author"/>
+        <result column="editNum" property="editNum"/>
+        <result column="print_date" property="print_date"/>
+        <result column="print_count" property="print_count"/>
+        <result column="ISBN" property="ISBN"/>
+        <result column="word_count" property="word_count"/>
+        <result column="page_count" property="page_count"/>
+        <result column="page" property="page"/>
+        <result column="pack" property="pack"/>
+        <result column="salenum" property="salenum"/>
+        <result column="custome_score" property="custome_score"/>
+        <result column="recommend" property="recommend"/>
+        <result column="messages" property="messages"/>
+        <result column="author_msg" property="author_msg"/>
+        <result column="list" property="list"/>
+        <result column="media_comment" property="media_comment"/>
+        <result column="imagePath" property="imagePath"/>
+        <result column="series_name" property="series_name"/>
+        <result column="Dangprice" property="Dangprice"/>
+        <result column="product_image" property="product_image"/>
+            <association property="Category" javaType="com.baizhi.entity.Category">
+                <id column="category_id" property="category_id"/>
+                <result column="parent_id" property="parent_id"/>
+                <result column="category_name" property="category_name"/>
+                <result column="count" property="count"/>
+                <result column="category_type" property="category_type"/>
+            </association>
+
+    </resultMap>-->
+    <select id="selectAll" resultType="Product">
+        select * from dd_product limit #{start},#{end}
+    </select>
+
+    <!--总条数-->
+    <select id="getCount" resultType="int">
+        select count(*) from dd_product
+    </select>
+
+    <!--添加-->
+    <insert id="insert">
+		insert into dd_product values(0,#{cid},#{book_name},#{book_price},system,#{inventory},#{author},#{salenum},#{messages},#{Dangprice},#{product_image})
+	</insert>
+
+    <!--删除-->
+    <delete id="delete">
+        delete from dd_product where book_id in
+        <foreach collection="array" open="(" close=")" separator="," item="ids">
+            #{ids}
+        </foreach>
+    </delete>
+
+    <!--查询一个-->
+    <select id="selectOne" resultType="Product">
+        select *from dd_product where book_id=#{book_id}
+    </select>
+
+    <!--修改-->
+    <update id="update">
+        update dd_product set cid=#{cid},book_name=#{book_name},book_price=#{book_price},system,inventory=#{inventory},author=#{author},salenum=#{salenum},messages=#{messages},Dangprice=#{Dangprice},product_image=#{product_image} where book_id=#{book_id}
+    </update>
+
+
+</mapper>
