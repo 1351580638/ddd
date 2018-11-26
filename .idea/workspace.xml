@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74cbf91b-9498-4d79-9280-d39b4586902a" name="Default Changelist" comment="" />
+    <list default="true" id="74cbf91b-9498-4d79-9280-d39b4586902a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/DD/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +144,7 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="D:/" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -264,11 +266,6 @@
               <item name="dd" type="b2602c69:ProjectViewProjectNode" />
               <item name="DD" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DD" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -371,12 +368,12 @@
       <workItem from="1543104229591" duration="19967000" />
       <workItem from="1543149841744" duration="2304000" />
       <workItem from="1543190677287" duration="824000" />
-      <workItem from="1543191714576" duration="5735000" />
+      <workItem from="1543191714576" duration="6393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66360000" />
+    <option name="totallyTimeSpent" value="67018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -391,7 +388,7 @@
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.5885246" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.3295082" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.76393443" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.21967213" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.12295082" />

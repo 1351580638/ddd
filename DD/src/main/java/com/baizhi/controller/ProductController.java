@@ -19,6 +19,7 @@ public class ProductController {
     public @ResponseBody Map selectAll(Integer page, Integer rows){
 
        return productService.selectAll(page,rows);
+
     }
 
     //添加
